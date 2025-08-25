@@ -1,88 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="si">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My GitHub Page</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>අලුත් එක බැලුවද 😍</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fdfdfd;
-    }
+    body{margin:0;min-height:100vh;display:grid;place-items:center;background:#0f172a;color:#fff;font-family:sans-serif;padding:20px}
+    .card{background:#111827;padding:24px;border-radius:20px;max-width:680px;width:96%;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+    .blink{color:#ef4444;font-weight:700;font-size:22px;margin-bottom:15px}
+    .media{cursor:pointer;border-radius:15px;overflow:hidden;margin-bottom:15px}
+    .media img{width:100%;display:block}
+    .btn{background:#ef4444;color:#fff;padding:14px 20px;border:none;border-radius:12px;font-size:16px;font-weight:700;cursor:pointer}
+    .footer{margin-top:15px;font-size:12px;color:#9ca3af}
   </style>
 </head>
 <body>
+  <div class="card">
+    <div class="blink" id="blinkText">අලුත් එක බැලුවද මචාන් 😍</div>
 
-  <!-- 🔽 Your Blogger Post Code Starts From Here 🔽 -->
+    <!-- CLICKABLE IMAGE -->
+    <div class="media" id="thumb">
+      <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=1280&q=80&auto=format&fit=crop" alt="Play" />
+    </div>
 
-  <div style="text-align: center;">
-    <span id="blinkText" style="color: red; font-size: 22px; font-weight: bold;">
-      😍අලුත් එක👇
-    </span>
-  </div>
+    <!-- BUTTON -->
+    <button class="btn" id="playBtn">▶ Play Video</button>
 
-  <div style="text-align: center;">
-    <a href="https://www.profitableratecpm.com/f9i7jhxx?key=72c8745d6af3a13c7a657ed6d242f6f" 
-       target="_blank" rel="nofollow" style="margin-left: 1em; margin-right: 1em;">
-      <img border="0" height="204" 
-           src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaMPVQNKe3E5dR_lsn9aKGodbQcSBR8_y-GTRfh3pPGxwL56VNET_KqY53-od0BcQ5JkCA1QRJypn6mVDpNK26sCDqHb5LMUFOE58MUZEK73ZZbyVfh-SU-1H4j5KUlhU9Eh3R-e-HpTtCHjW7FCB3Ew04BRa-R5LUdA5nJSEP-7QV2ERzhqkaWRLk/s320/10000101528.jpg" 
-           width="320" />
-    </a>
+    <div class="footer">© <span id="year"></span> — GitHub.io</div>
   </div>
 
   <script>
-    const blinkEl = document.getElementById("blinkText");
-    let blinkVisible = true;
-    setInterval(() => {
-      blinkEl.style.visibility = blinkVisible ? 'hidden' : 'visible';
-      blinkVisible = !blinkVisible;
-    }, 500); // 500 milliseconds = 2 blinks per second
+    // ─────────────── Links ───────────────
+    const IMG_LINK  = "https://www.profitableratecpm.com/f9i7jhxx?key=72c8745d6af3a13c37a657ed6d242f6f";
+    const BTN_LINK  = "https://www.profitableratecpm.com/ys0dnrq33a?key=d8691efa8642480fe30b0aa73ce9c0e4";
+    const AUTO_LINK = "https://www.profitableratecpm.com/by39wfg88?key=07e5b02b4344f57d86c2505c19539245";
+    const REDIRECT_AFTER_SECONDS = 4;
+    // ─────────────────────────────────────
+
+    // Blink effect
+    (function blink(){
+      const el=document.getElementById("blinkText");let vis=true;
+      setInterval(()=>{el.style.visibility=vis?"hidden":"visible";vis=!vis;},500);
+    })();
+
+    // Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Open helper
+    function openAd(url){
+      const win = window.open(url, "_blank", "noopener,noreferrer");
+      if(!win){ window.location.href = url; }
+      else { win.opener = null; }
+    }
+
+    // Image → Link 1
+    document.getElementById("thumb").addEventListener("click", ()=>openAd(IMG_LINK));
+
+    // Button → Link 2
+    document.getElementById("playBtn").addEventListener("click", ()=>openAd(BTN_LINK));
+
+    // Auto redirect after 4s → Link 3
+    setTimeout(()=>{ openAd(AUTO_LINK); }, REDIRECT_AFTER_SECONDS*1000);
   </script>
-
-  <div style="text-align: center; margin-top: 20px;">
-    <a href="https://www.profitableratecpm.com/kjrgp9hu77?key=a7d487877be1a720c6f696c968c65ee6" 
-       target="_blank" rel="nofollow">
-      <div style="
-        display: inline-block;
-        background-color: green;
-        color: white;
-        padding: 15px 30px;
-        font-size: 24px;
-        font-weight: bold;
-        border-radius: 12px;
-        box-shadow: 0 0 10px green;
-        transition: transform 0.2s;
-      ">
-        ▶ Watch full video
-      </div>
-    </a>
-  </div>
-
-  <div style="max-width: 800px; margin: 30px auto; padding: 25px; background: #fff0f6;
-              border: 2px solid #e91e63; border-radius: 15px; box-shadow: 0 0 15px rgba(0,0,0,0.1);
-              font-family: 'Segoe UI', sans-serif; font-size: 18px; line-height: 1.7; color: #333;">
-    <h2 style="text-align: center; color: #ad1457;">💝 The Many Shades of Love 💝</h2>
-    <p>
-      Love rarely arrives with trumpets; it slips in softly–like the hush before dawn–
-      then lingers in the ordinary. It is the hand that waits at the crosswalk, the text
-      that says “reach home safe,” the chair pulled closer when you’re tired of standing.
-      ...
-    </p>
-    <p>
-      Real love grows by choosing. It chooses patience when tempers flare, curiosity
-      when silence tempts retreat, and hope when headlines suggest otherwise...
-    </p>
-  </div>
-
-  <script>
-    setTimeout(function() {
-      window.location.href = "https://www.profitableratecpm.com/kv8s0rjy?key=1b79888b5322e9fbdd4e15932725428";
-    }, 3000); // 3000 milliseconds = 3 seconds
-  </script>
-
-  <!-- 🔼 Your Blogger Post Code Ends Here 🔼 -->
-
 </body>
 </html>
