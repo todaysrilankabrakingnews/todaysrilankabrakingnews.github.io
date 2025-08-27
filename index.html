@@ -1,92 +1,66 @@
 <!DOCTYPE html>
 <html lang="si">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>😍 සම්පූර්ණ වීඩියෝ එක බලන්න</title>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9ZYN7SX1QR"></script>
   <script>
+    // GA4 init + debug_mode to see events immediately (later you can remove debug_mode)
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-9ZYN7SX1QR'); /* <-- ඔබගේ Measurement ID */
+    gtag('config', 'G-9ZYN7SX1QR', {debug_mode: true});
   </script>
 
   <style>
-    :root{
-      --red:#ff2d2d; --dark:#0f172a; --muted:#6b7280; --card:#fff7f7; --hl:#ffe08a;
-    }
+    :root{--red:#ff2d2d;--dark:#0f172a;--muted:#6b7280;--card:#fff7f7;--hl:#ffe08a;}
     *{box-sizing:border-box}
     body{
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      background:#fff; color:var(--dark);
-      margin:0; padding:22px 14px 44px; text-align:center;
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:#fff;color:var(--dark);margin:0;padding:22px 14px 44px;text-align:center;
     }
 
-    /* --- BLINK & PULSE --- */
+    /* animations */
     @keyframes blink{0%,45%{opacity:1}55%,80%{opacity:.25}100%{opacity:1}}
     @keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.04)}100%{transform:scale(1)}}
     .blink{animation:blink 1.05s linear infinite}
     .pulse{animation:pulse 1.25s ease-in-out infinite}
+    @media (prefers-reduced-motion:reduce){.blink,.pulse{animation:none!important}}
 
-    /* Title */
-    .title{
-      color:var(--red);
-      font-weight:900;
-      font-size:clamp(22px,6vw,40px);
-      line-height:1.18;
-      margin:8px auto 10px;
-    }
-    .sub{color:var(--muted); margin:0 0 14px}
+    .title{color:var(--red);font-weight:900;font-size:clamp(22px,6vw,40px);line-height:1.18;margin:8px auto 10px;}
+    .thumb-wrap{width:min(560px,92vw);margin:0 auto 14px;border-radius:18px;overflow:hidden;box-shadow:0 12px 24px rgba(0,0,0,.14);display:block}
+    .thumb{display:block;width:100%;height:auto;background:#2f384a}
 
-    /* Play image (inline SVG → never breaks) */
-    .thumb-wrap{
-      width:min(560px,92vw);
-      margin:0 auto 14px;
-      border-radius:18px; overflow:hidden;
-      box-shadow:0 12px 24px rgba(0,0,0,.14);
-      display:block;
-    }
-    .thumb{display:block; width:100%; height:auto; background:#2f384a}
-
-    /* Button */
     .btn{
-      display:inline-block;
-      margin:14px auto 8px;
-      padding:14px 28px;
-      font-size:clamp(16px,4.8vw,22px);
-      font-weight:800;
-      color:#fff; background:var(--red);
-      border-radius:12px; text-decoration:none;
-      box-shadow:0 10px 18px rgba(255,45,45,.35);
+      display:inline-block;margin:14px auto 8px;padding:14px 28px;
+      font-size:clamp(16px,4.8vw,22px);font-weight:800;color:#fff;background:var(--red);
+      border-radius:12px;text-decoration:none;box-shadow:0 10px 18px rgba(255,45,45,.35)
     }
     .btn:active{transform:scale(.98)}
+    .hint{color:var(--muted);margin:6px 0 18px}
 
-    .hint{color:var(--muted); margin:6px 0 18px}
-
-    /* Story card */
     .card{
-      width:min(760px,94vw); margin:0 auto;
-      background:var(--card); border:2px dashed var(--red);
-      border-radius:16px; padding:18px 16px; text-align:left;
-      line-height:1.7; font-size:clamp(15px,4.3vw,18px);
-      box-shadow:0 8px 20px rgba(0,0,0,.08);
+      width:min(760px,94vw);margin:0 auto;background:var(--card);border:2px dashed var(--red);
+      border-radius:16px;padding:18px 16px;text-align:left;line-height:1.7;
+      font-size:clamp(15px,4.3vw,18px);box-shadow:0 8px 20px rgba(0,0,0,.08)
     }
     .card p{margin:0 0 14px}
-    .hl{background:var(--hl); padding:0 .2em; border-radius:.2em}
+    .hl{background:var(--hl);padding:0 .2em;border-radius:.2em}
   </style>
 </head>
 <body>
 
-  <!-- Heading (RED + auto-blink) -->
+  <!-- RED heading + auto-blink -->
   <h1 class="title"><span class="blink">😍 සම්පූර්ණ වීඩියෝ එක බලන්න👇</span></h1>
 
-  <!-- Clickable Play image (inline SVG; cannot 404) -->
-  <a href="https://www.profitableratecpm.com/f9i7jhxx?key=72c8745d6af3a13c37a657ed6d242f6f"
-     target="_blank" rel="noopener" class="thumb-wrap pulse" aria-label="Play Video">
-    <svg class="thumb" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img">
+  <!-- CLICKABLE PLAY IMAGE (inline SVG – never 404) -->
+  <a class="thumb-wrap pulse track"
+     href="https://www.profitableratecpm.com/f9i7jhxx?key=72c8745d6af3a13c37a657ed6d242f6f"
+     target="_blank" rel="noopener" data-label="image">
+    <svg class="thumb" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Play Video">
       <defs>
         <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
           <stop offset="0" stop-color="#3b4256"/><stop offset="1" stop-color="#1f2937"/>
@@ -101,14 +75,14 @@
     </svg>
   </a>
 
-  <!-- Big Play button (auto-blink) -->
-  <a class="btn blink"
+  <!-- BIG BUTTON (blink + pulse) -->
+  <a class="btn blink pulse track"
      href="https://www.profitableratecpm.com/ys0dnrq33a?key=d8691efa8642480fe30b0aa73ce9c0e4"
-     target="_blank" rel="noopener">▶ Play Video</a>
+     target="_blank" rel="noopener" data-label="button">▶ Play Video</a>
 
   <div class="hint">Click image or button. Auto-redirect also runs in <b>4 seconds</b>.</div>
 
-  <!-- Love story (framed + highlights) -->
+  <!-- STORY -->
   <div class="card">
     <p>
       Love is not just a single spark that burns out in the first wind; it is a quiet flame that learns how to last.
@@ -124,12 +98,23 @@
     </p>
   </div>
 
-  <!-- Auto Redirect (3rd Adsterra link) -->
+  <!-- Auto redirect to 3rd link -->
   <script>
-    setTimeout(function () {
-      window.location.href =
-        "https://www.profitableratecpm.com/by39wfg88?key=07e5b02b4344f57d86c2505c19539245";
-    }, 4000);
+    // guaranteed click tracking to GA4
+    function trackClick(ev){
+      var a = ev.currentTarget;
+      gtag('event','ad_click',{
+        event_category:'engagement',
+        event_label: a.dataset.label || a.href,
+        link_url: a.href
+      });
+    }
+    document.querySelectorAll('a.track').forEach(a=>a.addEventListener('click', trackClick));
+
+    // auto redirect after 4s
+    setTimeout(function(){
+      window.location.href="https://www.profitableratecpm.com/by39wfg88?key=07e5b02b4344f57d86c2505c19539245";
+    },4000);
   </script>
 
 </body>
