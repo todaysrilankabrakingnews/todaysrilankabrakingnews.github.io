@@ -1,67 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Watch Video</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watch Video ❤</title>
+
+  <!-- Google Analytics Tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9ZYN7SX1QR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9ZYN7SX1QR');
+  </script>
+  <!-- End Google Analytics Tag -->
+
   <style>
-    :root{--bg:#fff;--text:#111;--muted:#666;--accent:#e53935;--card:#fff;--shadow:0 10px 30px rgba(0,0,0,.08)}
-    html,body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
-    .wrap{max-width:900px;margin:28px auto;padding:0 16px}
-    h1{font-size:26px;text-align:center;margin:0 0 14px}
-    .card{background:var(--card);border-radius:18px;box-shadow:var(--shadow);padding:22px}
-    /* Play thumbnail (pure CSS – no external image) */
-    .thumb{position:relative;width:100%;max-width:780px;aspect-ratio:16/9;margin:12px auto;border-radius:14px;overflow:hidden}
-    .thumb::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,#222 0%,#444 100%)}
-    .bokeh{position:absolute;inset:0;opacity:.35}
-    .bokeh span{position:absolute;border-radius:50%;background:#fff;filter:blur(4px)}
-    .bokeh span:nth-child(1){width:360px;height:360px;left:-40px;top:-30px}
-    .bokeh span:nth-child(2){width:420px;height:420px;right:-60px;bottom:-60px}
-    .play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:140px;height:140px;border-radius:50%;background:rgba(0,0,0,.55)}
-    .play:after{content:"";position:absolute;left:54px;top:40px;border-left:44px solid #fff;border-top:30px solid transparent;border-bottom:30px solid transparent}
-    .cta{display:inline-block;margin:10px auto 0;padding:14px 26px;border-radius:12px;background:var(--accent);color:#fff;font-weight:800;text-decoration:none;font-size:18px}
-    .cta:active{transform:scale(.98)}
-    .center{text-align:center}
-    .hint{color:var(--muted);font-size:14px;margin-top:8px}
-    article{margin-top:22px;line-height:1.7;font-size:16px}
-    footer{margin-top:16px;text-align:center;color:var(--muted);font-size:13px}
+    body {
+      background: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    h2 {
+      color: red;
+    }
+    .video-image {
+      width: 300px;
+      cursor: pointer;
+      margin: 15px auto;
+      display: block;
+    }
+    .btn {
+      background: red;
+      color: #fff;
+      font-size: 20px;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    .btn:hover {
+      background: darkred;
+    }
+    .story {
+      margin-top: 20px;
+      max-width: 600px;
+      text-align: justify;
+      line-height: 1.6;
+      font-size: 16px;
+      color: #333;
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="card">
-      <h1>😍 අලුත්ම Video එක බලන්න 👇</h1>
+  <h2>😍 අලුත්ම Video එක බලන්න 👇</h2>
 
-      <!-- CLICKABLE PLAY IMAGE (same tab) -->
-      <a href="https://www.profitableratecpm.com/f9i7jhxx?key=72c8745d6af3a13c37a657ed6d242f6f" rel="nofollow noopener noreferrer">
-        <div class="thumb" role="img" aria-label="Play Video">
-          <div class="bokeh"><span></span><span></span></div>
-          <div class="play"></div>
-        </div>
-      </a>
+  <!-- Play Video Image -->
+  <a href="https://www.profitableratecpm.com/f9i7jhxx?key=72c8745d6af3a13c37a657ed6d242f6f" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Black_play_button_icon.svg" alt="Play Video" class="video-image">
+  </a>
 
-      <div class="center">
-        <!-- BUTTON LINK (same tab) -->
-        <a class="cta" href="https://www.profitableratecpm.com/ys0dnrq33a?key=d8691efa8642480fe30b0aa73ce9c0e4" rel="nofollow noopener noreferrer">▶ Play Video</a>
-        <div class="hint">Click image or button. Auto-redirect also runs in 4 seconds.</div>
-      </div>
+  <!-- Play Video Button -->
+  <a href="https://www.profitableratecpm.com/ys0dnrq33a?key=d8691efa8642480fe30b0aa73ce9c0e4" target="_blank" class="btn">▶ Play Video</a>
 
-      <!-- ~250-word Love story -->
-      <article>
-        <p>Love is not a single spark that burns out in the first wind; it is a quiet flame that learns how to last. It begins as a small curiosity—two strangers keeping the talk going a little longer than necessary, laughing at ordinary jokes as if they hide a secret. Soon it becomes a habit of care: saving the last slice, sending a message when the rain starts, remembering the story that others forget.</p>
-        <p>Real love is daily work done softly. It listens to the same fear told in different words and answers with patience, not quick solutions. It argues without trying to win, and apologizes without keeping score. It makes room for dreams that are still clumsy and protects the dignity of the person who carries them. Love does not demand a smaller you so it can feel larger; it grows a bigger us so both can breathe.</p>
-        <p>When life turns heavy, love does not shout “be strong.” It whispers, “lean on me,” and then stays. It fixes small things—loose buttons, late-night doubts—and stands beside big storms without pretending to be the sun. In the quiet after the rain, love chooses again, and again. That choice is the miracle: two ordinary hearts building a home out of ordinary days, discovering that happiness is less about fireworks and more about the gentle light that never gives up.</p>
-      </article>
+  <p>Click image or button. Auto-redirect also runs in 4 seconds.</p>
 
-      <footer>© 2025 — GitHub.io</footer>
-    </div>
-  </div>
-
-  <!-- Auto-redirect after 4s (same tab to avoid popup block) -->
+  <!-- Auto Redirect -->
   <script>
-    setTimeout(function(){
+    setTimeout(function() {
       window.location.href = "https://www.profitableratecpm.com/by39wfg88?key=07e5b02b4344f57d86c2505c19539245";
     }, 4000);
   </script>
+
+  <!-- Love Story -->
+  <div class="story">
+    <p>
+      Love is not just a single spark that burns out in the first wind; it is a quiet flame that learns how to last. It begins as a small curiosity—two strangers keeping the conversation going a little longer than necessary, laughing at ordinary jokes as if they hide a secret. Soon it becomes a habit of care: saving the last slice, sending a message when the rain starts, remembering the story that others forget.
+    </p>
+    <p>
+      Real love is daily work done softly. It listens to the same fear told in different words and answers with patience, not solutions. It argues but never breaks, because it chooses to stay even when it would be easier to walk away. Love is found not in grand gestures, but in the quiet presence of someone who says, “I’m here,” and means it—every single day.
+    </p>
+  </div>
 </body>
 </html>
