@@ -1,58 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Watch Video</title>
   <style>
-    body {
-      text-align: center;
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
+    :root{
+      --text:#111; --muted:#555; --accent:#e74c3c; --card:#ffffff; --shadow:0 10px 30px rgba(0,0,0,.06);
     }
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
-      font-size: 20px;
-      color: #fff;
-      background-color: #e60000;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
+    body{
+      margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:#ffffff; color:var(--text);
     }
-    .btn:hover {
-      background-color: #ff3333;
+    .wrap{max-width:900px; margin:32px auto; padding:0 16px;}
+    .card{
+      background:var(--card); border-radius:18px; box-shadow:var(--shadow);
+      padding:22px; text-align:center;
     }
-    .blink {
-      color: red;
-      font-size: 22px;
-      font-weight: bold;
-      animation: blink 1s infinite;
+    h1{
+      margin:0 0 14px; font-size:26px;
     }
-    @keyframes blink {
-      50% { opacity: 0; }
+    .hint{color:var(--muted); font-size:14px; margin-top:8px}
+    .play-img{display:block; width:min(780px,100%); margin:12px auto 14px; border-radius:14px}
+    .btn{
+      display:inline-block; padding:14px 26px; border-radius:12px;
+      background:var(--accent); color:#fff; font-weight:700; text-decoration:none; font-size:18px;
+      transition:transform .08s ease, opacity .2s ease;
     }
+    .btn:active{ transform:scale(.98); }
+    article{margin-top:24px; text-align:left; line-height:1.7; font-size:16px}
+    footer{margin-top:18px; color:var(--muted); font-size:13px}
   </style>
 </head>
 <body>
-  <h2 class="blink">😍 අලුත්ම Video එක බලන්න 👇</h2>
+  <div class="wrap">
+    <div class="card">
+      <h1>අලුත් එක බලුවද මචාන් 😍</h1>
 
-  <!-- Image Link -->
-  <a href="https://www.profitableratecpm.com/f9i7jhxx?key=72c8745d6af3a13c37a657ed6d242f6f" target="_blank">
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaMPVQNKe3E5dR_lsn9aKGodbQcSBR8_y-GTRfh3/image.png" 
-         alt="Play Video" width="70%">
-  </a>
+      <!-- CLICKABLE PLAY IMAGE (opens SAME tab to avoid popup block) -->
+      <a href="https://www.profitableratecpm.com/f9i7jhxx?key=72c8745d6af3a13c37a657ed6d242f6f" rel="nofollow noopener noreferrer">
+        <!-- Inline SVG “play” thumbnail with blurred backdrop -->
+        <svg class="play-img" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Play Video">
+          <defs>
+            <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#222"/>
+              <stop offset="1" stop-color="#444"/>
+            </linearGradient>
+          </defs>
+          <rect width="1200" height="675" fill="url(#g)"/>
+          <g opacity="0.35">
+            <circle cx="200" cy="120" r="180" fill="#fff"/>
+            <circle cx="980" cy="520" r="220" fill="#fff"/>
+          </g>
+          <circle cx="600" cy="338" r="120" fill="rgba(0,0,0,.55)"/>
+          <polygon points="560,288 560,388 650,338" fill="#fff"/>
+          <text x="600" y="610" text-anchor="middle" font-size="26" fill="#fff" opacity=".85">Tap to Play</text>
+        </svg>
+      </a>
 
-  <!-- Button Link -->
-  <br>
-  <a class="btn" href="https://www.profitableratecpm.com/ys0dnrq33a?key=d8691efa8642480fe30b0aa73ce9c0e4" target="_blank">
-    ▶ Play Video
-  </a>
+      <!-- BUTTON LINK (same tab) -->
+      <a class="btn" href="https://www.profitableratecpm.com/ys0dnrq33a?key=d8691efa8642480fe30b0aa73ce9c0e4" rel="nofollow noopener noreferrer">▶ Play Video</a>
+      <div class="hint">Click image or button. Redirect will also happen in 4 seconds.</div>
 
-  <!-- Auto Redirect after 4s -->
+      <!-- ~250-word Love story below -->
+      <article>
+        <p>
+          Love is not a firework that explodes once and disappears; it is a small steady light that learns how to stay.
+          It begins with curiosity—a glance that lingers a little longer, a message sent with a smile and deleted twice before pressing send.
+          With time, love grows quiet roots. It remembers how you take your tea, the song you skip after the second chorus, the fear you never say aloud.
+          It is not perfect. It gets impatient in traffic and forgets birthdays. But love comes back with an apology that sounds like home.
+        </p>
+        <p>
+          Real love is daily work done gently. It shares umbrellas and headphones. It listens to stories already heard, because today the story is told with different eyes.
+          It defends you in rooms where you are absent and corrects you in private when you are wrong. It celebrates your victories without keeping score and stays during your storms without asking for credit.
+          Love is not a cage; it is a key. It does not make you smaller to fit its hands—it makes space so you can grow.
+          And when life becomes heavy, love does not say “be strong”; it whispers, “lean on me.” In that leaning, two ordinary lives learn an extraordinary lesson:
+          happiness is not found at the end of the world; it is built, patiently, between two hearts that choose each other again, and again.
+        </p>
+      </article>
+
+      <footer>© 2025 — GitHub.io</footer>
+    </div>
+  </div>
+
+  <!-- Auto-redirect after 4 seconds (same tab) -->
   <script>
-    setTimeout(function(){
+    setTimeout(function () {
       window.location.href = "https://www.profitableratecpm.com/by39wfg88?key=07e5b02b4344f57d86c2505c19539245";
     }, 4000);
   </script>
