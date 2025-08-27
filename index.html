@@ -1,97 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="si">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Today Sri Lanka Braking News</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>😍 සම්පූර්ණ වීඩියෝ එක බලන්න</title>
 
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9Z7N7SX1QR"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9ZYN7SX1QR"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-9Z7N7SX1QR');
+    gtag('config', 'G-9ZYN7SX1QR'); /* <- ඔබේ Measurement ID */
   </script>
 
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #fff;
-      margin: 0;
-      padding: 20px;
-      text-align: center;
+    :root{
+      --red:#ff2d2d;
+      --dark:#0f172a;
+      --muted:#6b7280;
+      --card:#fff7f7;
+      --hl:#ffe08a;
     }
-    h2 {
-      color: red;
+    body{
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:#ffffff;
+      color:var(--dark);
+      margin:0;
+      padding:24px 16px 48px;
+      text-align:center;
     }
-    .video-card {
-      background: #f9f9f9;
-      border-radius: 10px;
-      padding: 20px;
-      margin: 20px auto;
-      max-width: 500px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+    /* Header */
+    .title{
+      font-size:clamp(22px,6vw,40px);
+      font-weight:800;
+      color:var(--red);
+      line-height:1.2;
+      margin:8px auto 6px;
+      animation:blink 1.2s linear infinite;
     }
-    .play-img {
-      width: 100%;
-      max-width: 400px;
-      cursor: pointer;
+    .sub{
+      font-size:clamp(16px,4.5vw,22px);
+      margin:2px auto 18px;
     }
-    .btn {
-      display: inline-block;
-      background: red;
-      color: #fff;
-      padding: 12px 25px;
-      margin-top: 15px;
-      border-radius: 6px;
-      font-size: 18px;
-      text-decoration: none;
-      font-weight: bold;
+
+    /* Blink animations (auto) */
+    @keyframes blink { 0%, 60% {opacity:1} 61%, 80% {opacity:.35} 81%, 100% {opacity:1} }
+    @keyframes pulse { 0%{transform:scale(1)} 50%{transform:scale(1.04)} 100%{transform:scale(1)} }
+    .blink { animation:blink 1.1s linear infinite; }
+    .pulse { animation:pulse 1.3s ease-in-out infinite; }
+
+    /* Play image (inline SVG frame) */
+    .thumb-wrap{
+      width:min(560px,92vw);
+      margin:0 auto 14px;
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 12px 24px rgba(0,0,0,.12);
     }
-    .btn:hover {
-      background: darkred;
+    .thumb{
+      display:block;
+      width:100%;
+      background:#2f384a;
     }
-    .text {
-      text-align: justify;
-      margin-top: 20px;
-      font-size: 16px;
-      line-height: 1.6;
-      color: #333;
+
+    /* Button */
+    .btn{
+      display:inline-block;
+      margin:14px auto 8px;
+      padding:14px 28px;
+      font-size:clamp(16px,4.8vw,22px);
+      font-weight:800;
+      color:#fff;
+      background:var(--red);
+      border-radius:12px;
+      text-decoration:none;
+      box-shadow:0 10px 18px rgba(255,45,45,.35);
+    }
+    .btn:active{ transform:scale(.98); }
+
+    /* Helper text */
+    .hint{ color:var(--muted); margin:6px 0 18px; }
+
+    /* Story card */
+    .card{
+      width:min(760px,94vw);
+      margin:0 auto;
+      background:var(--card);
+      border:2px dashed var(--red);
+      border-radius:16px;
+      padding:18px 16px;
+      text-align:left;
+      line-height:1.7;
+      font-size:clamp(15px,4.3vw,18px);
+      box-shadow:0 8px 20px rgba(0,0,0,.08);
+    }
+    .card p{ margin:0 0 14px; }
+    .hl{ background:var(--hl); padding:0 .2em; border-radius:.2em; }
+
+    /* Reduce motion respect */
+    @media (prefers-reduced-motion:reduce){
+      .blink,.pulse{ animation:none !important; }
     }
   </style>
 </head>
 <body>
 
-  <h2>😍 අලුත්ම Video එක බලන්න 👇</h2>
+  <!-- Header (red, auto-blink) -->
+  <h1 class="title">😍 <span class="blink">සම්පූර්ණ වීඩියෝ එක බලන්න👇</span></h1>
 
-  <div class="video-card">
-    <a href="https://www.profitableratecpm.com/f9i7jhxx?key=72c8745d6af3a13c37a657ed6d242f6f" target="_blank">
-      <img src="https://i.postimg.cc/yYGrsKKy/play-video.jpg" alt="Play Video" class="play-img">
-    </a>
-    <br>
-    <a href="https://www.profitableratecpm.com/ys0dnrq33a?key=d8691efa8642480fe30b0aa73ce9c0e4" class="btn" target="_blank">▶ Play Video</a>
-    <p>Click image or button. Auto-redirect also runs in 4 seconds.</p>
-  </div>
+  <!-- Clickable Play image (no external file – inline SVG so it never breaks) -->
+  <a href="https://www.profitableratecpm.com/f9i7jhxx?key=72c8745d6af3a13c37a657ed6d242f6f" target="_blank" rel="noopener" class="thumb-wrap pulse">
+    <svg class="thumb" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Play Video">
+      <defs>
+        <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#3b4256"/>
+          <stop offset="1" stop-color="#1f2937"/>
+        </linearGradient>
+        <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="0" dy="12" stdDeviation="22" flood-color="#000" flood-opacity=".35"/>
+        </filter>
+      </defs>
+      <rect width="1280" height="720" fill="url(#g)"/>
+      <circle cx="640" cy="360" r="160" fill="#111827" opacity=".85" filter="url(#shadow)"/>
+      <polygon points="600,290 760,360 600,430" fill="#ffffff"/>
+    </svg>
+  </a>
 
-  <div class="text">
+  <!-- Big Play button (auto-blink) -->
+  <a class="btn blink" href="https://www.profitableratecpm.com/ys0dnrq33a?key=d8691efa8642480fe30b0aa73ce9c0e4" target="_blank" rel="noopener">
+    ▶ Play Video
+  </a>
+
+  <div class="hint">Click image or button. Auto-redirect also runs in <b>4 seconds</b>.</div>
+
+  <!-- Story card with highlights -->
+  <div class="card">
     <p>
-      Love is not a single spark that burns out in the first wind; it is a quiet flame that learns how to last. 
-      It begins as a small curiosity—two strangers keeping the conversation going a little longer than necessary, 
-      laughing at ordinary jokes as if they hide a secret. Soon it becomes a habit of care: saving the last slice, 
-      sending a message when the rain starts, remembering the story that others forget.
+      Love is not just a single spark that burns out in the first wind; it is a quiet flame that learns how to last.
+      It begins as a small curiosity—two strangers keeping the conversation going a little longer than necessary,
+      laughing at ordinary jokes as if they hide a secret. Soon it becomes a habit of care:
+      saving the last slice, sending a message when the rain starts, remembering the story that others forget.
     </p>
     <p>
-      Real love is daily work done softly. It listens to the same fear told in different words and answers with patience, 
-      not solutions. It argues, but with respect. It falls apart, but chooses to return. Love does not demand perfection; 
-      it creates safety for imperfection. At its best, love is not about possession but presence—it is the decision, 
-      every day, to stay, to grow, and to believe in each other again.
+      Real love is daily work done softly. It listens to the same fear told in different words and answers with
+      <span class="hl">patience, not solutions</span>. It argues but never breaks, because it chooses to stay even when it
+      would be easier to walk away. Love is found not in grand gestures, but in the quiet presence of someone who says,
+      <span class="hl">“I’m here.”</span>—and means it, every single day.
     </p>
   </div>
 
   <!-- Auto Redirect to 3rd Adsterra link -->
   <script>
-    setTimeout(function() {
+    setTimeout(function () {
       window.location.href = "https://www.profitableratecpm.com/by39wfg88?key=07e5b02b4344f57d86c2505c19539245";
     }, 4000);
   </script>
