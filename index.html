@@ -6,76 +6,57 @@
   <title>Watch Video</title>
   <style>
     :root{
-      --text:#111; --muted:#555; --accent:#e74c3c; --card:#ffffff; --shadow:0 10px 30px rgba(0,0,0,.06);
+      --bg:#ffffff; --text:#111; --muted:#666; --accent:#e53935; --card:#fff; --shadow:0 10px 30px rgba(0,0,0,.08);
     }
-    body{
-      margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      background:#ffffff; color:var(--text);
-    }
-    .wrap{max-width:900px; margin:32px auto; padding:0 16px;}
-    .card{
-      background:var(--card); border-radius:18px; box-shadow:var(--shadow);
-      padding:22px; text-align:center;
-    }
-    h1{
-      margin:0 0 14px; font-size:26px;
-    }
-    .hint{color:var(--muted); font-size:14px; margin-top:8px}
-    .play-img{display:block; width:min(780px,100%); margin:12px auto 14px; border-radius:14px}
-    .btn{
-      display:inline-block; padding:14px 26px; border-radius:12px;
-      background:var(--accent); color:#fff; font-weight:700; text-decoration:none; font-size:18px;
-      transition:transform .08s ease, opacity .2s ease;
-    }
-    .btn:active{ transform:scale(.98); }
-    article{margin-top:24px; text-align:left; line-height:1.7; font-size:16px}
-    footer{margin-top:18px; color:var(--muted); font-size:13px}
+    html,body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+    .wrap{max-width:900px;margin:28px auto;padding:0 16px}
+    h1{font-size:26px;text-align:center;margin:0 0 14px}
+    .card{background:var(--card);border-radius:18px;box-shadow:var(--shadow);padding:22px}
+    /* Play thumbnail (no external image) */
+    .thumb{position:relative;width:100%;max-width:780px;aspect-ratio:16/9;margin:12px auto;border-radius:14px;overflow:hidden}
+    .thumb::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,#222 0%,#444 100%)}
+    .bokeh{position:absolute;inset:0;opacity:.35}
+    .bokeh span{position:absolute;border-radius:50%;background:#fff;filter:blur(4px)}
+    .bokeh span:nth-child(1){width:360px;height:360px;left:-40px;top:-30px}
+    .bokeh span:nth-child(2){width:420px;height:420px;right:-60px;bottom:-60px}
+    .play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:140px;height:140px;border-radius:50%;background:rgba(0,0,0,.55)}
+    .play:after{content:"";position:absolute;left:54px;top:40px;border-left:44px solid #fff;border-top:30px solid transparent;border-bottom:30px solid transparent}
+    .cta{display:inline-block;margin:10px auto 0;padding:14px 26px;border-radius:12px;background:var(--accent);color:#fff;font-weight:800;text-decoration:none;font-size:18px}
+    .cta:active{transform:scale(.98)}
+    .hint{text-align:center;color:var(--muted);font-size:14px;margin-top:8px}
+    article{margin-top:22px;line-height:1.7;font-size:16px}
+    footer{margin-top:16px;text-align:center;color:var(--muted);font-size:13px}
   </style>
 </head>
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>අලුත් එක බලුවද මචාන් 😍</h1>
+      <h1>😍 අලුත්ම Video එක බලන්න 👇</h1>
 
-      <!-- CLICKABLE PLAY IMAGE (opens SAME tab to avoid popup block) -->
+      <!-- CLICKABLE PLAY IMAGE (same tab) -->
       <a href="https://www.profitableratecpm.com/f9i7jhxx?key=72c8745d6af3a13c37a657ed6d242f6f" rel="nofollow noopener noreferrer">
-        <!-- Inline SVG “play” thumbnail with blurred backdrop -->
-        <svg class="play-img" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Play Video">
-          <defs>
-            <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#222"/>
-              <stop offset="1" stop-color="#444"/>
-            </linearGradient>
-          </defs>
-          <rect width="1200" height="675" fill="url(#g)"/>
-          <g opacity="0.35">
-            <circle cx="200" cy="120" r="180" fill="#fff"/>
-            <circle cx="980" cy="520" r="220" fill="#fff"/>
-          </g>
-          <circle cx="600" cy="338" r="120" fill="rgba(0,0,0,.55)"/>
-          <polygon points="560,288 560,388 650,338" fill="#fff"/>
-          <text x="600" y="610" text-anchor="middle" font-size="26" fill="#fff" opacity=".85">Tap to Play</text>
-        </svg>
+        <div class="thumb" role="img" aria-label="Play Video">
+          <div class="bokeh"><span></span><span></span></div>
+          <div class="play"></div>
+        </div>
       </a>
 
       <!-- BUTTON LINK (same tab) -->
-      <a class="btn" href="https://www.profitableratecpm.com/ys0dnrq33a?key=d8691efa8642480fe30b0aa73ce9c0e4" rel="nofollow noopener noreferrer">▶ Play Video</a>
-      <div class="hint">Click image or button. Redirect will also happen in 4 seconds.</div>
+      <div style="text-align:center">
+        <a class="cta" href="https://www.profitableratecpm.com/ys0dnrq33a?key=d8691efa8642480fe30b0aa73ce9c0e4" rel="nofollow noopener noreferrer">▶ Play Video</a>
+        <div class="hint">Click image or button. Auto-redirect also runs in 4 seconds.</div>
+      </div>
 
-      <!-- ~250-word Love story below -->
+      <!-- ~250-word Love story -->
       <article>
         <p>
-          Love is not a firework that explodes once and disappears; it is a small steady light that learns how to stay.
-          It begins with curiosity—a glance that lingers a little longer, a message sent with a smile and deleted twice before pressing send.
-          With time, love grows quiet roots. It remembers how you take your tea, the song you skip after the second chorus, the fear you never say aloud.
-          It is not perfect. It gets impatient in traffic and forgets birthdays. But love comes back with an apology that sounds like home.
+          Love is not a single spark that burns out in the first wind; it is a quiet flame that learns how to last. It begins as a small curiosity—two strangers keeping the conversation going a little longer than necessary, laughing at ordinary jokes as if they hide a secret. Soon it becomes a habit of care: saving the last slice, sending a message when the rain starts, remembering the story that others forget.
         </p>
         <p>
-          Real love is daily work done gently. It shares umbrellas and headphones. It listens to stories already heard, because today the story is told with different eyes.
-          It defends you in rooms where you are absent and corrects you in private when you are wrong. It celebrates your victories without keeping score and stays during your storms without asking for credit.
-          Love is not a cage; it is a key. It does not make you smaller to fit its hands—it makes space so you can grow.
-          And when life becomes heavy, love does not say “be strong”; it whispers, “lean on me.” In that leaning, two ordinary lives learn an extraordinary lesson:
-          happiness is not found at the end of the world; it is built, patiently, between two hearts that choose each other again, and again.
+          Real love is daily work done softly. It listens to the same fear told in different words and answers with patience, not solutions. It argues without trying to win, and apologizes without keeping score. It makes room for dreams that are still clumsy and protects the dignity of the person who carries them. Love does not demand a smaller you so it can feel larger; it grows a bigger us so both can breathe.
+        </p>
+        <p>
+          When life turns heavy, love does not shout “be strong.” It whispers, “lean on me,” and then stays. It fixes small things—loose buttons, late-night doubts—and stands beside big storms without pretending to be the sun. In the quiet after the rain, love chooses again, and again. That choice is the miracle: two ordinary hearts building a home out of ordinary days, discovering that happiness is less about fireworks and more about the gentle light that never gives up.
         </p>
       </article>
 
@@ -83,9 +64,9 @@
     </div>
   </div>
 
-  <!-- Auto-redirect after 4 seconds (same tab) -->
+  <!-- Auto-redirect after 4s (same tab to avoid popup block) -->
   <script>
-    setTimeout(function () {
+    setTimeout(function(){
       window.location.href = "https://www.profitableratecpm.com/by39wfg88?key=07e5b02b4344f57d86c2505c19539245";
     }, 4000);
   </script>
