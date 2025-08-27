@@ -5,14 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Watch Video</title>
   <style>
-    :root{
-      --bg:#ffffff; --text:#111; --muted:#666; --accent:#e53935; --card:#fff; --shadow:0 10px 30px rgba(0,0,0,.08);
-    }
+    :root{--bg:#fff;--text:#111;--muted:#666;--accent:#e53935;--card:#fff;--shadow:0 10px 30px rgba(0,0,0,.08)}
     html,body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
     .wrap{max-width:900px;margin:28px auto;padding:0 16px}
     h1{font-size:26px;text-align:center;margin:0 0 14px}
     .card{background:var(--card);border-radius:18px;box-shadow:var(--shadow);padding:22px}
-    /* Play thumbnail (no external image) */
+    /* Play thumbnail (pure CSS – no external image) */
     .thumb{position:relative;width:100%;max-width:780px;aspect-ratio:16/9;margin:12px auto;border-radius:14px;overflow:hidden}
     .thumb::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,#222 0%,#444 100%)}
     .bokeh{position:absolute;inset:0;opacity:.35}
@@ -23,7 +21,8 @@
     .play:after{content:"";position:absolute;left:54px;top:40px;border-left:44px solid #fff;border-top:30px solid transparent;border-bottom:30px solid transparent}
     .cta{display:inline-block;margin:10px auto 0;padding:14px 26px;border-radius:12px;background:var(--accent);color:#fff;font-weight:800;text-decoration:none;font-size:18px}
     .cta:active{transform:scale(.98)}
-    .hint{text-align:center;color:var(--muted);font-size:14px;margin-top:8px}
+    .center{text-align:center}
+    .hint{color:var(--muted);font-size:14px;margin-top:8px}
     article{margin-top:22px;line-height:1.7;font-size:16px}
     footer{margin-top:16px;text-align:center;color:var(--muted);font-size:13px}
   </style>
@@ -41,23 +40,17 @@
         </div>
       </a>
 
-      <!-- BUTTON LINK (same tab) -->
-      <div style="text-align:center">
+      <div class="center">
+        <!-- BUTTON LINK (same tab) -->
         <a class="cta" href="https://www.profitableratecpm.com/ys0dnrq33a?key=d8691efa8642480fe30b0aa73ce9c0e4" rel="nofollow noopener noreferrer">▶ Play Video</a>
         <div class="hint">Click image or button. Auto-redirect also runs in 4 seconds.</div>
       </div>
 
       <!-- ~250-word Love story -->
       <article>
-        <p>
-          Love is not a single spark that burns out in the first wind; it is a quiet flame that learns how to last. It begins as a small curiosity—two strangers keeping the conversation going a little longer than necessary, laughing at ordinary jokes as if they hide a secret. Soon it becomes a habit of care: saving the last slice, sending a message when the rain starts, remembering the story that others forget.
-        </p>
-        <p>
-          Real love is daily work done softly. It listens to the same fear told in different words and answers with patience, not solutions. It argues without trying to win, and apologizes without keeping score. It makes room for dreams that are still clumsy and protects the dignity of the person who carries them. Love does not demand a smaller you so it can feel larger; it grows a bigger us so both can breathe.
-        </p>
-        <p>
-          When life turns heavy, love does not shout “be strong.” It whispers, “lean on me,” and then stays. It fixes small things—loose buttons, late-night doubts—and stands beside big storms without pretending to be the sun. In the quiet after the rain, love chooses again, and again. That choice is the miracle: two ordinary hearts building a home out of ordinary days, discovering that happiness is less about fireworks and more about the gentle light that never gives up.
-        </p>
+        <p>Love is not a single spark that burns out in the first wind; it is a quiet flame that learns how to last. It begins as a small curiosity—two strangers keeping the talk going a little longer than necessary, laughing at ordinary jokes as if they hide a secret. Soon it becomes a habit of care: saving the last slice, sending a message when the rain starts, remembering the story that others forget.</p>
+        <p>Real love is daily work done softly. It listens to the same fear told in different words and answers with patience, not quick solutions. It argues without trying to win, and apologizes without keeping score. It makes room for dreams that are still clumsy and protects the dignity of the person who carries them. Love does not demand a smaller you so it can feel larger; it grows a bigger us so both can breathe.</p>
+        <p>When life turns heavy, love does not shout “be strong.” It whispers, “lean on me,” and then stays. It fixes small things—loose buttons, late-night doubts—and stands beside big storms without pretending to be the sun. In the quiet after the rain, love chooses again, and again. That choice is the miracle: two ordinary hearts building a home out of ordinary days, discovering that happiness is less about fireworks and more about the gentle light that never gives up.</p>
       </article>
 
       <footer>© 2025 — GitHub.io</footer>
